@@ -36,44 +36,67 @@ struct dsvec2{
 
 };
 
-struct dsmat4{
-	float X0;
-	float Y0;
-	float Z0;
-	float W0;
-	float X1;
-	float Y1;
-	float Z1;
-	float W1;
-	float X2;
-	float Y2;
-	float Z2;
-	float W2;
-	float X3;
-	float Y3;
-	float Z3;
-	float W3;
+struct dsmat32{
+	float X0, Y0, Z0;
+	float X1, Y1, Z1;
 
 };
 
+struct dsmat23{
+	float X0, Y0;
+	float X1, Y1;
+	float X2, Y2;
+
+};
+
+struct dsmat24{
+	float X0, Y0;
+	float X1, Y1;
+	float X2, Y2;
+	float X3, Y3;
+
+};
+
+struct dsmat42{
+	float X0, Y0, Z0, W0;
+	float X1, Y1, Z1, W1;
+
+};
+
+struct dsmat43{
+	float X0, Y0, Z0, W0;
+	float X1, Y1, Z1, W1;
+	float X2, Y2, Z2, W2;
+
+};
+
+struct dsmat34{
+	float X0, Y0, Z0;
+	float X1, Y1, Z1;
+	float X2, Y2, Z2;
+	float X3, Y3, Z3;
+
+};
+
+struct dsmat4{
+	float X0, Y0, Z0, W0;
+	float X1, Y1, Z1, W1;
+	float X2, Y2, Z2, W2;
+	float X3, Y3, Z3, W3;
+
+};
+
+
 struct dsmat3{
-	float X0;
-	float Y0;
-	float Z0;
-	float X1;
-	float Y1;
-	float Z1;
-	float X2;
-	float Y2;
-	float Z2;
+	float X0, Y0, Z0;
+	float X1, Y1, Z1;
+	float X2, Y2, Z2;
 
 };
 
 struct dsmat2{
-	float X0;
-	float Y0;
-	float X1;
-	float Y1;
+	float X0, Y0;
+	float X1, Y1;
 
 };
 
