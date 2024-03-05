@@ -12,12 +12,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////
 
-struct dsvec3{
-float X;
-float Y;
-float Z;
-
-};
+#include "dsmath_types.ispc"
 
 export uniform dsvec3 ds_vec3add(const uniform float Lhs[3], const uniform float Rhs[3]){
 	uniform dsvec3 Result;
