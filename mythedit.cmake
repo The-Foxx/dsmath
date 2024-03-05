@@ -16,4 +16,6 @@ set(BGPU
 ${BGPU}
 dsmath/mat4.ispc
 
+dsmath/vec3.ispc
+
 )
