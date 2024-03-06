@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////
 //
-//  QuestDS Engine Engine Source File.
+//  QuestDS Engine Source File.
 //  Copyright (C) 2024 Clara Lille
 // -------------------------------------------------------------------------
 //  File name:   math.h
