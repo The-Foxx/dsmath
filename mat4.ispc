@@ -14,8 +14,8 @@
 
 #include "dsmath_types.ispc"
 
-export uniform dsmat4 ds_mat4add(const uniform float Lhs[16], const uniform float Rhs[16]){
-	uniform dsmat4 Result;
+export uniform ds_mat4 ds_mat4add(const uniform float Lhs[16], const uniform float Rhs[16]){
+	uniform ds_mat4 Result;
 	Result.X0 = Lhs[0] + Rhs[0];
 	Result.Y0 = Lhs[1] + Rhs[1];
 	Result.Z0 = Lhs[2] + Rhs[2];

@@ -15,7 +15,7 @@
 #ifndef DSMATH_TYPES_ISPC
 #define DSMATH_TYPES_ISPC
 
-struct dsvec4{
+struct ds_vec4{
 	float X;
 	float Y;
 	float Z;
@@ -23,33 +23,33 @@ struct dsvec4{
 
 };
 
-struct dsvec3{
+struct ds_vec3{
 	float X;
 	float Y;
 	float Z;
 
 };
 
-struct dsvec2{
+struct ds_vec2{
 	float X;
 	float Y;
 
 };
 
-struct dsmat32{
+struct ds_mat32{
 	float X0, Y0, Z0;
 	float X1, Y1, Z1;
 
 };
 
-struct dsmat23{
+struct ds_mat23{
 	float X0, Y0;
 	float X1, Y1;
 	float X2, Y2;
 
 };
 
-struct dsmat24{
+struct ds_mat24{
 	float X0, Y0;
 	float X1, Y1;
 	float X2, Y2;
@@ -57,20 +57,20 @@ struct dsmat24{
 
 };
 
-struct dsmat42{
+struct ds_mat42{
 	float X0, Y0, Z0, W0;
 	float X1, Y1, Z1, W1;
 
 };
 
-struct dsmat43{
+struct ds_mat43{
 	float X0, Y0, Z0, W0;
 	float X1, Y1, Z1, W1;
 	float X2, Y2, Z2, W2;
 
 };
 
-struct dsmat34{
+struct ds_mat34{
 	float X0, Y0, Z0;
 	float X1, Y1, Z1;
 	float X2, Y2, Z2;
@@ -78,7 +78,7 @@ struct dsmat34{
 
 };
 
-struct dsmat4{
+struct ds_mat4{
 	float X0, Y0, Z0, W0;
 	float X1, Y1, Z1, W1;
 	float X2, Y2, Z2, W2;
@@ -87,14 +87,14 @@ struct dsmat4{
 };
 
 
-struct dsmat3{
+struct ds_mat3{
 	float X0, Y0, Z0;
 	float X1, Y1, Z1;
 	float X2, Y2, Z2;
 
 };
 
-struct dsmat2{
+struct ds_mat2{
 	float X0, Y0;
 	float X1, Y1;
 
