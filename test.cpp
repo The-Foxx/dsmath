@@ -26,7 +26,10 @@ int main(int argc, char* argv[]){
 	TestAddVec3.Y = 6.9F;
 	TestAddVec3.Z = 1.0F;
 
-	TestAddVec1 = ds_vec3add(TestAddVec2, TestAddVec3);
+	ispc::ds_vec3add(&TestAddVec2.X, &TestAddVec3.X, &TestAddVec1.X);
+	//TestAddVec1 = ds_vec3add(TestAddVec2, TestAddVec3);
+
+	printf("Got %f %f %f from vector add\n", TestAddVec1.X, TestAddVec1.Y, TestAddVec1.Z);
 
 	return 0;
 
