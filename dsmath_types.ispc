@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////
 //
-//  DsMath Source File.
+//  QuestDS Engine Engine Source File.
 //  Copyright (C) 2024 Clara Lille
 // -------------------------------------------------------------------------
 //  File name:   dsmath_types.ispc

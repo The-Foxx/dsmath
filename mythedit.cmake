@@ -1,6 +1,6 @@
 #///////////////////////////////////////////////////////////////////////////
 #/
-#/  dsmath Source File.
+#/  QuestDS Engine Source File.
 #/  Copyright (C) 2024 Clara Lille
 #/ -------------------------------------------------------------------------
 #/  File name:   mythedit.cmake
