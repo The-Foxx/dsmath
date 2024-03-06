@@ -13,7 +13,9 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "dsmath/mat4.ispc.h"
+
 #include "dsmath/vec3.ispc.h"
+#include "dsmath/vec2.ispc.h"
 
 #ifndef DSMATH_MATH_H
 #define DSMATH_MATH_H
@@ -24,6 +26,8 @@
 #else
 #define DSMATH_API
 #endif
+
+#define DSMATH_TYPEDEF_TYPES_FROM_ISPC
 
 //NOTE(clara): We have different interfaces for c and c++ so we can take advantage of the
 //    good features of c++ (even if cnlohr is going to joke on me for doing that)
@@ -107,20 +111,45 @@ typedef struct {
 } dsmat2;
 
 #else
+
+#ifndef DSMATH_TYPEDEF_TYPES_FROM_ISPC
 struct dsvec4 {
 	float X, Y, Z, W;
 
 };
 
+#else
+typedef ispc::ds_mat4 dsvec4;
+
+#endif
+
+#ifndef DSMATH_TYPEDEF_TYPES_FROM_ISPC
 struct dsvec3 {
 	float X, Y, Z;
 
 };
 
+#else
+typedef ispc::ds_vec3 dsvec3;
+
+#endif
+
+DSMATH_API dsvec3 ds_vec3add(dsvec3 const& Lhs, dsvec3 const& Rhs) {
+	return ispc::ds_vec3add((const float*)&Lhs, (const float*)&Rhs);
+
+}
+
+
+#ifndef DSMATH_TYPEDEF_TYPES_FROM_ISPC
 struct dsvec2 {
 	float X, Y;
 
 };
+
+#else
+typedef ispc::ds_vec2 dsvec2;
+
+#endif
 
 struct dsmat32 {
 	float X0, Y0, Z0;

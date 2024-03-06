@@ -19,5 +19,6 @@ dsmath/dsmath_types.ispc
 dsmath/mat4.ispc
 
 dsmath/vec3.ispc
+dsmath/vec2.ispc
 
 )
