@@ -38,9 +38,9 @@ typedef ispc::ds_mat4 dsvec4;
 typedef ispc::ds_vec3 dsvec3;
 
 DSMATH_API dsvec3 ds_vec3add(dsvec3 const& Lhs, dsvec3 const& Rhs) {
-	dsvec3 Result;
-	ispc::ds_vec3add((const float*)&Lhs, (const float*)&Rhs, &Result.X);
-	return Result;
+    dsvec3 Result;
+    ispc::ds_vec3add((const float*)&Lhs, (const float*)&Rhs, &Result.X);
+    return Result;
 
 }
 
